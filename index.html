@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
   <style>
   html{
   height: 100vh;
   }
   body{
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 40px;
   height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+   @media only screen and (max-width: 800px) {
   .container{
+  font-size: 35px;
+  }
+  }
+  .container{
+  margin-bottom: 100px;
+  width: 100%;
   font-size: 18px;
   }
   .name{
+  
   color: #DAA520;
       font-size: 90px;
     font-weight: normal;
     font-family: Brush Script MT;
   }
-  p#poetry{
+  #poetry{
+  width: 100%;
   margin-top: 50px;
-  font-size: 20px !important;
-  font-size: 30px;
+  font-size: 30px !important;
+ margin-bottom: 30px;
   color: #111;
 	font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+  }
+  @media only screen and (max-width: 800px) {
+  .container{
+  font-size: 35px;
+  }
   }
   </style>
   </head>
@@ -40,11 +60,11 @@
 	<div class="container">
 	A hip-hop girl also aclainmed as the Boss Lady.
 	</div>
-	<p id="poetry">
+	<div id="poetry">
 	With Sophistication, Beauty, Intellect & Charm,<br />
 	She walked with me with the hands so warm.
 	
-	</p>
+	</div>
   </body>
   
 

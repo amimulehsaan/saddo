@@ -68,13 +68,38 @@
   font-size: 22px;
   }
   }
+  
+.shine {
+  background: #DAA520 -webkit-gradient(linear, left top, right top, from(#DAA520), to(#DAA520), color-stop(0.2, #FF7F7F)) 0 0 no-repeat;
+  -webkit-background-size: 100px;
+  color: rgba(218,165,32, 0.3);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+
+  90%,100% {
+    background-position: 300px;
+  }
+}
   </style>
   </head>
   <body>
     <div class="container">
       The woman whose name is imprinted in golden words in the memory of my life time for being the first human with whom I gulped the first ounce of alcohol <i class="fas fa-wine-glass-alt"></i>
     </div>
-<h1 class="name">
+<h1 class="name shine">
       Ritika Das
     </h1>
 	

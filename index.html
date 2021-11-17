@@ -65,11 +65,16 @@
   
   }
   #poetry{
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 22px;
   }
   }
-  
+  @media (orientation: landscape) and (max-width: 800px) {
+  .container {
+    margin-bottom: 0;
+  }
+}
 .shine {
   background: #DAA520 -webkit-gradient(linear, left top, right top, from(#DAA520), to(#DAA520), color-stop(0.2, #FF7F7F)) 0 0 no-repeat;
   -webkit-background-size: 100px;

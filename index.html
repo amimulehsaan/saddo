@@ -29,18 +29,22 @@
   }
   }
   .container{
-  margin-bottom: 25px;
-  width: 100%;
-  font-size: 18px;
+	  margin-bottom: 25px;
+	  width: 100%;
+	  font-size: 18px;
   }
   .name{
-  
-  color: #DAA520;
-      font-size: 80px;
-	  line-height: 75px;
-	  margin: 25px 0;
+	color: #DAA520;
+	font-size: 80px;
+	line-height: 75px;
+	margin: 25px 0;
     font-weight: normal;
     font-family: Brush Script MT;
+  }
+  .date{
+  color: #8F8F8F;
+	font-size: 13px;
+	font-family: Brush Script MT;
   }
   #poetry{
   width: 100%;
@@ -58,15 +62,16 @@
   color: #00F;
   }
   @media only screen and (max-width: 800px) {
-
+	.date{
+		font-size: 14px;
+	  }
   .container{
-  font-size: 20px;
-  line-height: 30px;
-  
+	  font-size: 20px;
+	  line-height: 30px;
   }
   #poetry{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 22px;
   }
   }
@@ -81,7 +86,7 @@
   color: rgba(218,165,32, 0.3);
   -webkit-background-clip: text;
   -webkit-animation-name: shine;
-  -webkit-animation-duration: 9s;
+  -webkit-animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
 }
 
@@ -102,6 +107,7 @@
   </style>
   </head>
   <body>
+  <div class="date">November 14, 2021</div>
     <div class="container">
       The woman whose name is imprinted in golden words in the memory of my life time for being the first human with whom I gulped the first ounce of alcohol <i class="fas fa-wine-glass-alt"></i>
     </div>

@@ -9,6 +9,8 @@
   z-index: 1;
   cursor: pointer;
   display: none;
+  overflow: hidden;
+  padding-top: 3px;
 }
 .heartWrapper.show{
   display: block;

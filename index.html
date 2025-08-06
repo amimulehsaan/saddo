@@ -1,132 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <style>
-  @font-face {
-  font-family: Brush Script MT;
-	src: url(BRUSHSCI.TTF);
-}
-  html{
-  height: 100vh;
-  }
-  body{
-  margin: 0;
-  text-align: center;
-  padding: 0 20px;
-  line-height: 26px;
-  height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-   @media only screen and (max-width: 800px) {
-  .container{
-  font-size: 35px;
-  }
-  }
-  .container{
-	  margin-bottom: 25px;
-	  width: 100%;
-	  font-size: 18px;
-  }
-  .name{
-	color: #DAA520;
-	font-size: 80px;
-	line-height: 75px;
-	margin: 25px 0;
-    font-weight: normal;
-    font-family: Brush Script MT;
-  }
-  .date{
-  color: #8F8F8F;
-	font-size: 13px;
-	font-family: Brush Script MT;
-  }
-  #poetry{
-  width: 100%;
-  margin-top: 50px;
-  font-size: 24px;
- margin-bottom: 30px;
-  color: #111;
-	font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
-  }
-  .fa-heart{
-  color: RED;
-  font-size: 40px;
-  }
-  .fa-wine-glass-alt{
-  color: #00F;
-  }
-  @media only screen and (max-width: 800px) {
-	.date{
-		font-size: 14px;
-	  }
-  .container{
-	  font-size: 20px;
-	  line-height: 30px;
-  }
-  #poetry{
-  margin-top: 20px;
-  margin-bottom: 5px;
-  font-size: 22px;
-  }
-  }
-  @media (orientation: landscape) and (max-width: 800px) {
-  .container {
-    margin-bottom: 0;
-  }
-}
-.shine {
-  background: #DAA520 -webkit-gradient(linear, left top, right top, from(#DAA520), to(#DAA520), color-stop(0.2, #FF7F7F)) 0 0 no-repeat;
-  -webkit-background-size: 100px;
-  color: rgba(218,165,32, 0.3);
-  -webkit-background-clip: text;
-  -webkit-animation-name: shine;
-  -webkit-animation-duration: 7s;
-  -webkit-animation-iteration-count: infinite;
-}
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./heart.css">
+  <link rel="stylesheet" href="./heartClick.css">
+  <link rel="stylesheet" href="./birthdate.css">
+  <title>Happy Birthday Sadiya</title>
+  <script src="./script.js" type="text/javascript" defer></script>
+  <script src="./birthdate.js" type="text/javascript" defer></script>
+</head>
 
-
-
-@-webkit-keyframes shine {
-  0%, 10% {
-    background-position: -200px;
-  }
-  20% {
-    background-position: top left;
-  }
-
-  90%,100% {
-    background-position: 300px;
-  }
-}
-  </style>
-  </head>
-  <body>
-  <div class="date">November 14, 2021</div>
+<body>
+  <canvas id="heart"></canvas>
+  <main id="main">
+    <!-- <div class="date">Febuary 03, 2025</div>
     <div class="container">
-      The woman whose name is imprinted in golden words in the memory of my life time for being the first human with whom I gulped the first ounce of alcohol <i class="fas fa-wine-glass-alt"></i>
-    </div>
-<h1 class="name shine">
-      Ritika Das
+      <i class="fad fa-user-md fa-lg"></i>
+    </div> -->
+    <h1 class="name shine">
+      Sadiya Wahid Shaikh
     </h1>
-	
-	<div class="container">
-	A hip-hop girl also acclainmed as the Boss Lady 
-	</div>
-	<div id="poetry">
-	<i class="fas fa-quote-left"></i>
-	With Sophistication, Beauty, Intellect & Charm,<br />
-	She walked with me with the hands so warm.
-	
-	</div>
-	<i class="fas fa-heart"></i>
-  </body>
-  
 
-  <!-- //gauge-meter -->
+    <section>
+      <article id="countdown">
+        <div id="years">
+        </div>
+        <div id="months">
+        </div>
+        <div id="days">
+        </div>
+        <div id="hours">
+        </div>
+        <div id="minutes">
+        </div>
+        <div id="seconds">
+        </div>
+      </article>
+    </section>
+
+<section class="poetry-wrapper">
+  <div class="row site-intro">
+    <div class="publisherMessageText col-xs-12 cta-details text-center"
+      style="visibility: visible; animation-name: fadeInRightSlow;">
+      <div class="text-justify  backbox">
+        <div id="poetry" class="poetry-text">
+          <i class="fas fa-quote-left"></i>
+          Kahan socha tha main ne,
+          Ke yun baatein badhti jayegi, <br />
+          Ke yun hum milte jayeinge,
+          Aur qismat banti jayegi.<br />
+          <br />
+          Magar ek waqaye ne,
+          Raabta tumse banaya hai,<br />
+          Ke jab se tum ko jaana hai,
+          Na aur koi raas aaya hai.<br />
+          <br />
+          Tumhari saadgi ke pichhe,
+          Chhupa hai rang baaghon ka,<br />
+          Ye chanchal mann tumhara,
+          Banta hai thhandak nigaahon ka.<br />
+          <br />
+
+          Yun jab tum muskurati ho,
+          Bahaar-e-Bagh aa jaye,<br />
+          Faqat hone se tere,
+          Mehfilon mein jaan aa jaye.<br />
+          <br />
+
+          Haan bolo bol kar tumne,
+          Mujhe chhoda na kahin ka.<br />
+          Bhala azaad tha ye dil,
+          akela main to sahi thaa.<br />
+
+          Ke issey pehle hum padd jayein <br /> ab teri mohabbat mein,
+          Bacha lo mujhsko aye logon mujhe marawwat se,
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <div class="heartWrapper">
+      <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90" version="1.1">
+        <g class="heart-loader__group">
+          <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z" />
+          <path class="heart-loader__circle m--left" stroke-width="1" fill="none"
+            d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0" />
+          <path class="heart-loader__circle m--right" stroke-width="1" fill="none"
+            d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0" />
+          <path class="heart-loader__heartPath" stroke-width="2"
+            d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+        </g>
+      </svg>
+      <div class="heartClick"></div>
+    </div>
+
+  </main>
+
+</body>
+
+
+<!-- //gauge-meter -->
+
 </html>

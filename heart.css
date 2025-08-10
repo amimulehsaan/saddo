@@ -10,7 +10,12 @@
   cursor: pointer;
   display: none;
   overflow: hidden;
-  padding-top: 3px;
+  padding-top: 15px;
+}
+@media (orientation: portrait) and (max-width: 390px){
+  .heartWrapper {
+    margin-right: -50px;
+  }
 }
 .heartWrapper.show{
   display: block;

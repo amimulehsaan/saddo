@@ -85,20 +85,25 @@ body {
     line-height: 1.6;
   }
 }
+
 @media (orientation: landscape) and (max-width: 1180px) {
   .poetry-text {
     line-height: 1.1;
     font-size: 16px;
   }
 }
+
 @media only screen and (max-width: 390px) {
-.poetry-wrapper{
-  padding: 0;
+  .poetry-wrapper {
+    padding: 0;
+  }
+
+  .poetry-text {
+    padding: 15px 0 0;
+    font-size: 16px;
+  }
 }
-.poetry-text{
-  padding-top: 15px;
-}
-}
+
 .show.poetry-wrapper {
   opacity: 1;
   max-height: 945px;
@@ -222,7 +227,7 @@ canvas {
   height: 2px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3px;
   content: "";
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0));
 }
@@ -234,6 +239,18 @@ canvas {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(167, 141, 95, 1) 50%, rgba(167, 141, 95, 1) 50%, rgba(255, 255, 255, 0));
 }
 
+
+@media (orientation: landscape) and (max-width: 844px) {
+  .poetry-wrapper .site-intro .backbox:before
+    {
+      top: -8px;
+      left: 27%;
+  }
+    .poetry-wrapper .site-intro .backbox:after{
+      bottom: -11px;
+      left: 16%;
+    }
+}
 .site-intro .backbox .fas,
 .aboutMagazine .fas {
   color: #a78d5f;
@@ -273,10 +290,11 @@ canvas {
   .site-intro .introText {
     padding: 0 40px;
   }
-    .poetry-wrapper{
-      margin-bottom: 0;
-      padding: 40px;
-    }
+
+  .poetry-wrapper {
+    margin-bottom: 0;
+    padding: 40px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -303,7 +321,7 @@ canvas {
     content: "";
     background: url(./assets/letter-left.png);
     position: absolute;
-    left: -35px;
+    left: -39px;
     height: 420px;
     width: 180px;
     top: 0;
@@ -314,7 +332,7 @@ canvas {
     content: "";
     background: url(./assets/letter-right.png);
     position: absolute;
-    right: -25px;
+    right: -30px;
     height: 421px;
     width: 180px;
     bottom: -5px;

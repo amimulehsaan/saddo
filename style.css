@@ -93,7 +93,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media (orientation: portrait) and (max-width: 412px) {
   .poetry-wrapper {
     padding: 0;
   }
@@ -241,16 +241,17 @@ canvas {
 
 
 @media (orientation: landscape) and (max-width: 844px) {
-  .poetry-wrapper .site-intro .backbox:before
-    {
-      top: -8px;
-      left: 27%;
+  .poetry-wrapper .site-intro .backbox:before {
+    top: -8px;
+    left: 27%;
   }
-    .poetry-wrapper .site-intro .backbox:after{
-      bottom: -11px;
-      left: 16%;
-    }
+
+  .poetry-wrapper .site-intro .backbox:after {
+    bottom: -11px;
+    left: 16%;
+  }
 }
+
 .site-intro .backbox .fas,
 .aboutMagazine .fas {
   color: #a78d5f;
@@ -266,6 +267,12 @@ canvas {
   float: none;
   margin: -10px auto -14px;
   padding: 20px 15px;
+}
+
+@media (orientation: portrait) and (min-width: 390px) {
+  .site-intro .text-justify {
+    padding: 25px 0;
+  }
 }
 
 @media (min-width: 768px) {
